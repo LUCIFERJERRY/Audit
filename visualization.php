@@ -1,6 +1,6 @@
 <?php  
  $connect = mysqli_connect("localhost", "root", "", "audit");  
- $query = "SELECT AuditType, count(*) as number FROM audit_main GROUP BY AuditType";  
+ $query = "SELECT AuditType, count(*) as number FROM audit_main1 GROUP BY AuditType";  
  $result = mysqli_query($connect, $query);   
  ?>  
  <!DOCTYPE html>  
