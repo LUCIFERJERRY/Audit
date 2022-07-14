@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Audit Modular</title>
+</head>
+<body>
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Auditor ID :</td>
+    <td><input type="text" name="AuditorID" required></td>
+   </tr>
+
+   <tr>
+    <td>Audit-Type :</td>
+    <td>
+     <select name="AuditType" required>
+      <option selected hidden value="">Audit Type</option>
+      <option value="Inventory">Inventory</option>
+      <option value="Cash">Cash</option>
+      <option value="Fixed Assets">Fixed Assets</option>
+      <option value="Statutory Compliance">Statutory Compliance</option>
+     </select>
+    </td>
+   </tr>
+
+   <tr>
+    <td>Audit Date :</td>
+    <td>
+        <input type="date" id="AuditDate" name="AuditDate">
+    </td>
+   </tr>
+
+
+
+   <tr>
+    <td>Store Name :</td>
+    <td><input type="text" name="StoreName" required></td>
+   </tr> 
+
+   <tr>
+    <td>Store Opening Time :</td>
+    <td>
+        <input type="datetime-local" id="StoreOpTime" name="StoreOpTime">
+    </td>
+   </tr>
+   
+   <tr>
+    <td>Store Opening Image :</td>
+    <td>  
+        <input class="file-upload-input" type="file"  id="StoreOpImg" name="StoreOpImg" onchange="readURL(this)" accept="Image/*">
+    </td>
+   </tr>
+
+   <tr>
+    <td>Scanning Start Time:</td>
+    <td><input type="datetime-local" name="ScanningStartTime" required></td>
+   </tr> 
+
+   <tr>
+    <td>Scanning End Time:</td>
+    <td><input type="datetime-local" name="ScanningEndTime" required></td>
+   </tr> 
+
+   <tr>
+    <td>Backroom Scanning Complete Time:</td>
+    <td><input type="datetime-local" name="BackroomEndTime" required></td>
+   </tr> 
+
+   <tr>
+    <td>Untagged Garments Quantity:</td>
+    <td><input type="text" name="UntagGarmentQty" required></td>
+   </tr> 
+
+   <tr>
+    <td>Unscanned Garments Quantity:</td>
+    <td><input type="text" name="UnscanGarmentQty" required></td>
+   </tr> 
+
+   <tr>
+    <td>Observation Images:</td>
+    <td><input class="file-upload-input" type="file"  id="ObservationImg" name="ObservationImg" onchange="readURL(this)" accept="Image/*"></td>
+   </tr> 
+
+   <tr>
+    <td>Observations:</td>
+    <td>
+        <textarea rows = "5" cols = "60" name = "ObservationText">
+        
+        </textarea>
+    </td>
+   </tr> 
+
+   <tr>
+    <td>Annextures:</td>
+    <td><a href="annexture.html"><input type="button" value="Select" name="Annexture"></a></td>
+   </tr> 
+
+   <tr>
+    <td>Declaration:</td>
+    <td><input class="file-upload-input" type="file"  id="Declaration" name="Declaration" onchange="readURL(this)"></td>
+   </tr> 
+
+   <tr>
+    <td>Declaration Text:</td>
+    <td><input type="text" name="DeclarationText"></td>
+   </tr> 
+   
+   <tr>
+    <td><input type="submit" value="Submit" name="submit"></td>
+   </tr>
+   
+  </table>
+ </form>
+</body>
+</html>
